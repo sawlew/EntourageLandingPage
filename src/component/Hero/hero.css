@@ -1,0 +1,39 @@
+/* .hero-section{
+  border: 5px solid yellow;
+  position: relative;
+  height: 833px;
+  width: 100%;
+  overflow: hidden;
+  background-color: black;
+
+} */
+.hero {
+  /* position: absolute; */
+  width: 100%;
+  height: calc(100vh - 10px);
+  /* background: url("../../assets/hero-background-img.png"); */
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.hero-content {
+  text-align: center;
+  color: #ffffff;
+  padding-top: 1rem;
+}
+.hero-content p {
+  font-weight: 700;
+  font-size: 64px ;
+  /* margin-top: 1rem; */
+  /* padding: 10px; */
+  line-height: 60px;
+}
+/* @media screen and (min-width: 768px){
+  .hero-content p{
+  width: 982px;
+  font-weight: 700;
+  font-size: 64px;
+  line-height: 76.8px;
+}
+} */

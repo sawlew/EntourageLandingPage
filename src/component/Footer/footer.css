@@ -1,0 +1,37 @@
+footer {
+  background-color: #0F0F0F;
+  color: #ffffff;
+  padding: 25px 0;
+  border-top: 1px solid #ffffff1a;
+}
+.footer-sub-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 100%;
+  padding: 0 1rem;
+}
+.footer-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.footer-title h4{
+  font-family: 'Inknut Antiqua';
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 92.84px;
+}
+.footer-nav-links ul {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+.footer-nav-links li a {
+  color: #d9dbe1;
+}
+.social-medias ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+}

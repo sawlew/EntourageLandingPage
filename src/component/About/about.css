@@ -1,0 +1,81 @@
+.about-main-container {
+  background-color: #ffffff;
+  position: relative;
+  padding-bottom: 40px;
+}
+.about-sub-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 100%;
+  min-height: 100vh;
+  padding: 0 1rem;
+}
+.about-title h4, .about-sub-title h4 {
+  /* font-family: "Inknut Antiqua"; */
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 92.84px;
+  color: #000000;
+  text-align: center;
+}
+.about-sub-title h4{
+  font-family: "Inknut Antiqua";
+  text-align: left;
+}
+.about-flex {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 2.5rem;
+}
+.about-left {
+  flex: 1;
+}
+.about-left p {
+  width: 548px;
+  font-family: "Poppins";
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 40px;
+  color: #575757;
+}
+.about-right img {
+  max-width: 100%;
+  height: auto;
+}
+@media screen and (max-width: 840px){
+  .about-flex {
+  display: flex;
+  flex-direction: column-reverse;
+  gap: 1rem;
+  margin-top: 2.5rem;
+}
+.about-left p {
+  width: 380px;
+  font-family: "Poppins";
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 40px;
+  color: #575757;
+}
+}
+@media screen and (max-width: 380px){
+.about-left p {
+  width: 365px;
+  font-family: "Poppins";
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 40px;
+  color: #575757;
+}
+}
+@media screen and (max-width: 320px){
+.about-left p {
+  width: 300px;
+  font-family: "Poppins";
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 40px;
+  color: #575757;
+}
+}

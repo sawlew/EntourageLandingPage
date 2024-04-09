@@ -1,0 +1,136 @@
+.form-container {
+  min-height: 20vh;
+  width: 100%;
+  /* border: 5px solid yellow; */
+  position: relative;
+  /* top: -11%; */
+}
+
+.form-positioner{
+  width: 100%;
+  /* border: 5px solid red; */
+  position: absolute;
+  bottom: 50%;
+}
+.form-sub-container {
+  /* max-width: 1216px; */
+  width: 90%;
+  /* position: absolute; */
+  margin: auto;
+  padding: 20px;
+  /* top: 760px; */
+  /* left: 162px; */
+  border-radius: 16px;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  background-color: #ffffffe5;
+}
+.form-sub-content {
+  display: flex;
+  /* flex-direction: column; */
+  justify-content: center;
+  /* align-items: center; */
+  gap: 16px;
+}
+form {
+  display: flex;
+  /* flex-direction: column; */
+  justify-content: center;
+  /* align-items: center; */
+  gap: 16px;
+}
+.inputs {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.locaionIcon {
+  position: absolute;
+  top: 45px;
+  left: 10px;
+  font-size: 20px;
+}
+label {
+  color: #000000;
+  opacity: 80%;
+}
+.search-input {
+  padding-left: 35px;
+  padding-right: 55px;
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+.date-input {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #000000;
+  padding: 15px 7px;
+}
+input {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  outline: none;
+  border: none;
+  border: 1px solid #0000001a;
+  border-radius: 8px;
+  background-color: #ffffff;
+}
+::placeholder {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #000000;
+}
+.form-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.form-btn button {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 8px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+  padding-left: 20px;
+  padding-right: 35px;
+  padding-top: 15px;
+  padding-bottom: 11px;
+  border: none;
+  border-radius: 64px;
+  background-color: #0f0f0f;
+  color: #ffffff;
+}
+@media screen and (max-width: 840px) {
+  .form-container {
+  /* min-height: 70vh; */
+}
+  .form-sub-container {
+    /* left: 1px; */
+  }
+  .form-sub-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* align-items: center; */
+  gap: 16px;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* align-items: center; */
+  gap: 16px;
+}
+.date-input {
+  width: 100%;
+  padding: 15px 5px;
+}
+}

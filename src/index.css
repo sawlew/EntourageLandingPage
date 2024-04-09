@@ -1,0 +1,17 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}body {
+  font-family: "Inter Tight", sans-serif;
+  overflow-x: hidden;
+}
+html{
+  scroll-behavior: smooth;
+}
+a{
+  text-decoration: none;
+}
+ul li{
+  list-style: none;
+}
