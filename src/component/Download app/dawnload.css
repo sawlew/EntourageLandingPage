@@ -1,6 +1,11 @@
 .download-main-container {
-  background-color: #0f0f0f;
+  background-image: url("../../../public/images/downloadbg.png");
+  /* background-color: #0f0f0f; */
   min-height: 40vh;
+}
+.overlay2 {
+  background-color: #000000be;
+  height: 40vh;
 }
 .download-sub-container {
   max-width: 1100px;

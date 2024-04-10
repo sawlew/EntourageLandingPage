@@ -8,6 +8,7 @@ const PremiumServices = () => {
   return (
     <>
       <section className="premium-service-main-container" id="services">
+        <div className="overlay">
         <div className="premium-service-sub-container">
           <div className="premium-service-header">
             <div className="premium-service-title">
@@ -63,6 +64,8 @@ const PremiumServices = () => {
             </div>
           </div>
         </div>
+        </div>
+
       </section>
     </>
   );

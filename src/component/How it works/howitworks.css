@@ -73,7 +73,7 @@
   position: relative;
   /* border: 5px solid yellow; */
   display: flex;
-  justify-content: end;
+  justify-content: flex-end;
   margin: 3rem 0;
 }
 .real-left-container, .real-left-container2 {
@@ -94,7 +94,7 @@
 .need-car-left-content, .need-car-left-content2 {
   display: flex;
   align-items: center;
-  justify-content: start;
+  justify-content: flex-start;
   height: 150px;
   gap: 1rem;
   padding: 0 20px;
@@ -133,5 +133,5 @@
   height: auto;
   /* border: 5px solid red; */
   display: flex;
-  justify-content: end;
+  justify-content: flex-end;
 }

@@ -11,5 +11,10 @@ const HeroSlidesData =  [
     header: 'Discover the world on wheels with our car rental service',
     image: 'images/hero/hero2.png',
 },
+{
+    id: 3,
+    header: 'Discover the world on wheels with our car rental service',
+    image: 'images/hero/hero3.png',
+},
 ]
 export default HeroSlidesData

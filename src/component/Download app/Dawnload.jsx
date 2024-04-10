@@ -5,7 +5,8 @@ const DownloadApp = () => {
   return (
     <>
       <section className="download-main-container">
-        <div className="download-sub-container">
+          <div className="overlay2">
+          <div className="download-sub-container">
           <div className="download-contents">
             <div data-aos="fade-right" className="download-left">
               <div className="download-title">
@@ -28,6 +29,7 @@ const DownloadApp = () => {
             </div>
           </div>
         </div>
+          </div>
       </section>
     </>
   );

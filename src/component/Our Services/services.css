@@ -1,6 +1,10 @@
 .premium-service-main-container {
-  background-color: #000000;
+  background-image: url("../../../public/images/servicebg.png");
   color: #FFFFFF;
+  min-height: 75vh;
+}
+.overlay {
+  background-color: #000000be;
   min-height: 75vh;
 }
 .premium-service-sub-container {

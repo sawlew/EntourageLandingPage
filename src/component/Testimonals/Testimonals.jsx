@@ -40,11 +40,11 @@ const Testimonals = () => {
                   my rental period. I would definitely recommend this company to
                   anyone looking for a premium car rental experience.”
                 </p>
-                <div className="testimonal-avatar">
+                <div data-aos="fade-up" className="testimonal-avatar">
                   <div className="avatar">
                     <img src={TestimonalAvatar} alt="" />
                   </div>
-                  <div data-aos="fade-up" className="avatar-name">
+                  <div className="avatar-name">
                     <p>Lokman Hossain</p>
                     <span>From Texas</span>
                   </div>
