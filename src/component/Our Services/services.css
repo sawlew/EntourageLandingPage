@@ -1,17 +1,18 @@
 .premium-service-main-container {
   background-image: url("../../../public/images/servicebg.png");
   color: #FFFFFF;
-  min-height: 75vh;
+  /* min-height: 75vh; */
 }
 .overlay {
   background-color: #000000be;
-  min-height: 75vh;
+  /* min-height: 75vh; */
 }
 .premium-service-sub-container {
-  max-width: 1200px;
+  /* max-width: 1200px; */
   margin: 0 auto;
-  width: 100%;
+  width: 90%;
   padding: 0 1rem;
+  padding-bottom: 100px;
 }
 .premium-service-header {
   display: flex;
@@ -37,9 +38,12 @@
   text-align: center;
 }
 .premium-service-grid{
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  gap: 1rem;
+  /* display: grid;
+  grid-template-columns: 1fr 1fr 1fr; */
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  /* gap: 1rem; */
   margin-top: 3rem;
 }
 .premium-service-feature{

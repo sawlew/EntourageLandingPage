@@ -1,11 +1,12 @@
  .car-collection-main-container {
   background-color: #f5f5f5;
-  min-height: 150vh;
+  /* min-height: 150vh; */
 }
 .car-collection-sub-container {
-  max-width: 1100px;
+  /* max-width: 1100px; */
   margin: 0 auto;
-  width: 100%;
+  width: 90%;
+  /* border: 5px solid red; */
 }
 .car-collection-header {
   display: flex;
@@ -106,6 +107,7 @@
   border-radius: 24px;
   background-color: #ffffff;
   transition: linear ease-in-out 300ms;
+  margin: 0 auto;
   /* transition-duration: 5s; */
 }
 .car-card img {

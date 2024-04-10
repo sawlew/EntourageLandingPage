@@ -4,9 +4,9 @@
 }
 .how-it-works-sub-container {
   /* position: relative; */
-  max-width: 1200px;
+  /* max-width: 1200px; */
   margin: 0 auto;
-  width: 100%;
+  width: 90%;
   padding: 0 1rem;
   margin-top: 5rem;
 }

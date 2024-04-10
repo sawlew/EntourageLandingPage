@@ -5,6 +5,8 @@
 }body {
   font-family: "Inter Tight", sans-serif;
   overflow-x: hidden;
+  max-width: 1600px;
+  margin: 0 auto;
 }
 html{
   scroll-behavior: smooth;

@@ -1,18 +1,19 @@
 .download-main-container {
   background-image: url("../../../public/images/downloadbg.png");
   /* background-color: #0f0f0f; */
-  min-height: 40vh;
+  /* min-height: 40vh; */
 }
 .overlay2 {
   background-color: #000000be;
-  height: 40vh;
+  /* height: 40vh; */
 }
 .download-sub-container {
-  max-width: 1100px;
+  /* max-width: 1100px; */
   margin: 0 auto;
-  width: 100%;
+  width: 80%;
   padding: 0 1rem;
   padding-top: 5rem;
+  padding-bottom: 50px;
 }
 .download-contents {
   display: flex;
