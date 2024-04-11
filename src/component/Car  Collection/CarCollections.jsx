@@ -1,15 +1,16 @@
+import React, { useState } from 'react';
 import Speedometer from "../../assets/speedometer-01.png";
 import ManualGearBox from "../../assets/manual-gearbox.png";
 import Users from "../../assets/users-01.png";
 import FuelPomp from "../../assets/gas-station.png";
 import { motion } from "framer-motion";
 
-const CarCollections = ({ carsdata }) => {
+const CarCollections = ({ carsdata, showAll }) => {
 
   return (
     <>
       <div data-aos="fade-right" className="car-cards-container">
-        {carsdata.map((carsdata) => {
+        {carsdata.slice(0, showAll ? carsdata.length : 6).map((carsdata) => {
           const { id, title, price, image } = carsdata;
           return (
             <motion.article
@@ -50,12 +51,12 @@ const CarCollections = ({ carsdata }) => {
                 </div>
 
                 <div className="car-card-btn">
-                  <motion.button
+                  {/* <motion.button
                     className="card-btn"
                     whileHover={{ scale: 0.9 }}
-                  >
+                  > */}
                     Rent Now
-                  </motion.button>
+                  {/* </motion.button> */}
                 </div>
               </div>
             </motion.article>

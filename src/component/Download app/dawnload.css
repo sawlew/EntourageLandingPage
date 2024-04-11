@@ -2,6 +2,9 @@
   background-image: url("../../../public/images/downloadbg.png");
   /* background-color: #0f0f0f; */
   /* min-height: 40vh; */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 .overlay2 {
   background-color: #000000be;

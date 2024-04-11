@@ -4,7 +4,7 @@ import 'aos/dist/aos.css';
 import { useEffect } from "react";
 import {
   Hero,
-  Form,
+  // Form,
   About,
   CarCollections,
   HowItWorks,
@@ -22,7 +22,7 @@ function App() {
   return (
     <>
       <Hero />
-      <Form />
+      {/* <Form /> */}
       <About />
       <CarCollections />
       <HowItWorks />

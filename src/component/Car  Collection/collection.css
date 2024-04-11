@@ -149,8 +149,6 @@
 .car-card-btn {
   margin-top: 1rem;
   text-align: center;
-}
-.card-btn {
   padding: 8px 110px;
   border: none;
   border: 1px solid #000000;
@@ -162,7 +160,7 @@
   line-height: 19.36px;
   cursor: pointer;
 }
-.card-btn:hover {
+.car-card-btn:hover {
   color: #ffffff;
   background-color: #000000;
 }

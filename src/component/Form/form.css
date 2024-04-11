@@ -4,6 +4,7 @@
   /* border: 5px solid yellow; */
   position: relative;
   /* top: -11%; */
+  /* display: none; */
 }
 
 .form-positioner{
@@ -13,29 +14,21 @@
   bottom: 50%;
 }
 .form-sub-container {
-  /* max-width: 1216px; */
   width: 90%;
-  /* position: absolute; */
   margin: auto;
   padding: 20px;
-  /* top: 760px; */
-  /* left: 162px; */
   border-radius: 16px;
   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
   background-color: #ffffffe5;
 }
 .form-sub-content {
   display: flex;
-  /* flex-direction: column; */
   justify-content: center;
-  /* align-items: center; */
   gap: 16px;
 }
 form {
   display: flex;
-  /* flex-direction: column; */
   justify-content: center;
-  /* align-items: center; */
   gap: 16px;
 }
 .inputs {

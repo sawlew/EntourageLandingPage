@@ -9,6 +9,12 @@ import 'aos/dist/aos.css';
 // import Collections from "./Collections";
 const OurCarCollections = () => {
 
+  const [showAll, setShowAll] = useState(false);
+
+  const toggleShowAll = () => {
+    setShowAll(!showAll);
+  };
+
   useEffect(() => {
     AOS.init();
   }, [])
@@ -39,13 +45,15 @@ const OurCarCollections = () => {
               <button className="filter-btn">Premium Car</button>
             </nav>
           </div>
-          <CarCollections carsdata={cars} />
-          <div className="see-all-cars">
-            <motion.button className="see-all-cars-btn" whileHover={{scale: 0.9}}>
-              See all Cars
-              <FaIcon.FaArrowRight className="arrow-icon" />
-            </motion.button>
-          </div>
+          <CarCollections carsdata={cars} showAll={showAll}/>
+          {carsdata.length > 6 && (
+            <div className="see-all-cars" onClick={toggleShowAll}>
+              <motion.button className="see-all-cars-btn" whileHover={{scale: 0.9}}>
+                {showAll ? 'See less Cars' : 'See all Cars'}
+                <FaIcon.FaArrowRight className="arrow-icon" />
+              </motion.button>
+            </div>
+          )}
         </div>
       </section>
     </>

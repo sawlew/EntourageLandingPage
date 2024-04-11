@@ -34,7 +34,9 @@ const IAmADealer = () => {
         </div>
 
         <div data-aos="fade-left" className="need-car-right2">
-          <img src={Jeep} alt="" className="" />
+          <div className="image-container2" style={{backgroundImage: `url(${Jeep})`}}>
+            {/* <img src={Jeep} alt="" className="" /> */}
+          </div>
         </div>
       </div>
     </>

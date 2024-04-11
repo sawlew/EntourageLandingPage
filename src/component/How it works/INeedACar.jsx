@@ -10,7 +10,7 @@ const INeedACar = () => {
     <>
       <div className="need-car-container">
         <div className="real-left-container">
-        {howItWorks.map((needacar) => {
+          {howItWorks.map((needacar) => {
           const {id, title, desc, image} = needacar;
           return (
             <div className="need-car-left-container" key={id}>
@@ -29,11 +29,13 @@ const INeedACar = () => {
               </div>
             </div>
           );
-        })}
+          })}
         </div>
 
         <div data-aos="fade-left" className="need-car-right">
-          <img src={Jeep} alt="" className="" />
+          <div className="image-container" style={{backgroundImage: `url(${Jeep})`}}>
+            {/* <img src={Jeep} alt="" className="" /> */}
+          </div>
         </div>
       </div>
     </>

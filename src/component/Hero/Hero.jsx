@@ -1,4 +1,4 @@
-import { Header } from "..";
+import { Form, Header } from "..";
 import { useState } from "react";
 import HeroContent from "./HeroContent";
 import Herodata from "../../utils/HeroSlidesData";
@@ -11,11 +11,11 @@ const Hero = () => {
   var settings = {
     dots: false,
     infinite: true,
-    speed: 500,
+    speed: 1000,
     slidesToShow: 1,
     slidesToScroll: 1,
     autoplay: true,
-    autoplaySpeed: 3000,
+    autoplaySpeed: 7000,
     pauseOnHover: false,
   };
   return (
@@ -31,6 +31,7 @@ const Hero = () => {
         {/* {Herodata.map((data) => (
           <HeroContent key={data.id} Herodata={data} />
         ))} */}
+        <Form />
     </>
   );
 }

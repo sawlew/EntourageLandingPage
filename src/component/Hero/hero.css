@@ -17,10 +17,10 @@
 }
 .hero-content p {
   font-weight: 700;
-  font-size: 64px ;
+  font-size: 64px;
   /* margin-top: 1rem; */
   /* padding: 10px; */
-  line-height: 60px;
+  line-height: 50px;
 }
 /* @media screen and (min-width: 768px){
   .hero-content p{

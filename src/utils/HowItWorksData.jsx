@@ -10,7 +10,7 @@ const INeedACar = [
   },
   {
     id: 2,
-    title: "Nissan Maxima Platinum 2022",
+    title: "Book and confirm",
     desc: "Book your desired car with just a few clicks and receive an instant confirmation via email or SMS.",
     image: "images/calendar-check-02.png",
 
@@ -19,7 +19,7 @@ const INeedACar = [
   },
   {
     id: 3,
-    title: "Porsche Cayenne GTS 2022",
+    title: "Enjoy your ride",
     desc: "Pick up your car at the designated location and enjoy yourpremium driving experience with our top-quality service.",
     image: "images/face-happy.png",
 
