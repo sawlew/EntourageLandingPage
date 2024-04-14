@@ -1,19 +1,26 @@
 import "./App.css";
 import AOS from 'aos';
 import 'aos/dist/aos.css';
-import { useEffect } from "react";
+import { useState, useEffect } from "react";
 import {
+  Header,
   Hero,
-  // Form,
+  Form,
   About,
   CarCollections,
   HowItWorks,
   Services,
-  Testimonals,
+  Testimonials,
   DownloadApp,
   Footer,
+  Modal,
 } from "./component";
+
 function App() {
+  const [modal, setModal] = useState(false);
+  const showModal = () => {
+    setModal(!modal);
+  };
 
   useEffect(() => {
     AOS.init({
@@ -23,15 +30,17 @@ function App() {
 
   return (
     <>
+      <Header displayModal={showModal} />
       <Hero />
-      {/* <Form /> */}
+      <Form displayModal={showModal} />
       <About />
-      <CarCollections />
+      <CarCollections displayModal={showModal} />
       <HowItWorks />
       <Services />
-      <Testimonals />
+      <Testimonials />
       <DownloadApp />
       <Footer />
+      {modal ? <Modal displayModal={showModal} /> : null}
     </>
   );
 }

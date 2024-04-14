@@ -1,19 +1,15 @@
 .download-main-container {
   background-image: url("../../../public/images/downloadbg.png");
-  /* background-color: #0f0f0f; */
-  /* min-height: 40vh; */
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
 .overlay2 {
   background-color: #000000be;
-  /* height: 40vh; */
 }
 .download-sub-container {
-  /* max-width: 1100px; */
   margin: 0 auto;
-  width: 80%;
+  width: 85%;
   padding: 0 1rem;
   padding-top: 5rem;
   padding-bottom: 50px;
@@ -24,6 +20,7 @@
   align-items: center;
 }
 .download-left {
+  width: 60%;
   display: flex;
   flex-direction: column;
   gap: 0.9rem;
@@ -35,7 +32,6 @@
   color: #ffffff;
 }
 .download-desc p {
-  width: 450px;
   font-weight: 400;
   font-size: 16px;
   line-height: 26px;
@@ -43,12 +39,18 @@
 }
 .download-right{
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   gap: 1rem;
 }
+.store{
+  width: 50%;
+  object-fit: cover;
+}
+.store img{
+  width: 100%;
+}
 .app-store{
-  width: 193px;
   text-align: center;
   padding: 15px;
   border-radius: 73px;
@@ -56,13 +58,53 @@
   cursor: pointer;
 }
 .play-store{
-  width: 193px;
   text-align: center;
   padding: 15px;
   border-radius: 73px;
   background-color: #FFFFFF;
   cursor: pointer;
 }
-.store img{
-  width: 140.3px;
+
+@media screen and (max-width: 991px){
+  .download-contents{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+  }
+  .download-left{
+    width: 100%;
+    align-items: center;
+  }
+  .download-right{
+    width: 50%;
+  }
+  .download-title h4{
+    font-size: 30px;
+    text-align: center;
+  }
+  .download-desc p{
+    font-size: 14px;
+    text-align: center;
+  }
+
+}
+@media screen and (max-width: 767px){
+  .download-right{
+    width: 60%;
+  }
+}
+@media screen and (max-width: 500px) {
+  .download-sub-container{
+    width: 100%;
+  }
+  .download-title h4{
+    font-size: 150%;
+  }
+  .download-desc p{
+    font-size: 12px;
+  }
+  .download-right{
+    width: 100%;
+  }
 }

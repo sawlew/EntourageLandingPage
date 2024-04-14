@@ -4,7 +4,8 @@ header {
   background-color: #000000;
   /* background-color: red; */
   color: #ffff;
-  z-index: 1;
+  z-index: 10;
+  position: relative;
 }
 .header-content {
   /* max-width: 1400px; */
@@ -15,6 +16,8 @@ header {
   justify-content: space-between;
   align-items: center;
   /* border: 5px solid yellow; */
+  z-index: 10;
+  position: relative;
 }
 .header-nav-links ul {
   display: flex;
@@ -60,10 +63,13 @@ header {
   line-height: 24px;
   color: #ffffff;
 }
-@media screen and (max-width: 765px) {
-  .title span {
+@media screen and (max-width: 767px) {
+  .header-nav-links, .login-register{
     display: none;
   }
+  .menu-bar{
+    display: block;
+ }
 }
 @media screen and (max-width: 640px) {
   .login-register p {

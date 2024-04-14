@@ -23,8 +23,8 @@ const PremiumServices = () => {
             </div>
           </div>
 
-          <div data-aos="fade-left" className="premium-service-grid">
-            <div className="premium-service-feature">
+          <div className="premium-service-grid">
+            <div data-aos="fade-left" className="premium-service-feature">
               <div className="service-feature-icon">
                 <img src={StarIcon} alt="" />
               </div>
@@ -36,7 +36,7 @@ const PremiumServices = () => {
                 </p>
               </div>
             </div>
-            <div className="premium-service-feature">
+            <div data-aos="fade-left" className="premium-service-feature">
               <div className="service-feature-icon">
                 <img src={CoinsHand} alt="" />
               </div>
@@ -49,7 +49,7 @@ const PremiumServices = () => {
                 </p>
               </div>
             </div>
-            <div className="premium-service-feature">
+            <div data-aos="fade-left" className="premium-service-feature">
               <div className="service-feature-icon">
                 <img src={CheckIcon} alt="" />
               </div>

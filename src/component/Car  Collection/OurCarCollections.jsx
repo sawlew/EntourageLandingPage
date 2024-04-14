@@ -7,7 +7,7 @@ import { motion } from "framer-motion";
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 // import Collections from "./Collections";
-const OurCarCollections = () => {
+const OurCarCollections = ({displayModal}) => {
 
   const [showAll, setShowAll] = useState(false);
 
@@ -45,7 +45,7 @@ const OurCarCollections = () => {
               <button className="filter-btn">Premium Car</button>
             </nav>
           </div>
-          <CarCollections carsdata={cars} showAll={showAll}/>
+          <CarCollections displayModal={displayModal} carsdata={cars} showAll={showAll}/>
           {carsdata.length > 6 && (
             <div className="see-all-cars" onClick={toggleShowAll}>
               <motion.button className="see-all-cars-btn" whileHover={{scale: 0.9}}>

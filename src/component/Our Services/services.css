@@ -1,17 +1,14 @@
 .premium-service-main-container {
   background-image: url("../../../public/images/servicebg.png");
   color: #FFFFFF;
-  /* min-height: 75vh; */
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
 .overlay {
   background-color: #000000be;
-  /* min-height: 75vh; */
 }
 .premium-service-sub-container {
-  /* max-width: 1200px; */
   margin: 0 auto;
   width: 90%;
   padding: 0 1rem;
@@ -41,13 +38,11 @@
   text-align: center;
 }
 .premium-service-grid{
-  /* display: grid;
-  grid-template-columns: 1fr 1fr 1fr; */
   display: flex;
   justify-content: space-evenly;
   flex-wrap: wrap;
-  /* gap: 1rem; */
   margin-top: 3rem;
+  gap: 2rem;
 }
 .premium-service-feature{
   display: flex;
@@ -98,4 +93,29 @@
   font-size: 16px;
   line-height: 24px;
   color: #D6D6D6;
+}
+
+@media screen and (max-width: 991px) {
+  .premium-service-title h4{
+    font-size: 38px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .premium-service-description p{
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .premium-service-title h4{
+    font-size: 30px;
+    line-height: 35px;
+  }
+}
+
+@media screen and (max-width: 420px){
+  .one p, .two p, .three p{
+    width: 100%;
+  }
 }

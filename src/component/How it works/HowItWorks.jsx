@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useRef } from "react";
 import "./howitworks.css";
 import INeedACar from "./INeedACar";
 import IAmADealer from "./IAmADealer";
@@ -10,13 +10,20 @@ import "slick-carousel/slick/slick-theme.css";
 
 
 const HowItWorksMain = () => {
+  let sliderRef = useRef(null);
+  const next = () => {
+    sliderRef.slickNext();
+  };
+  const previous = () => {
+    sliderRef.slickPrev();
+  };
 
-  var settings = {
+  const settings = {
     infinite: false,
     slidesToShow: 1,
     slidesToScroll: 1,
-    nextArrow: <DealerButton />,
-    prevArrow: <NeedACarButton />,
+    // nextArrow: <DealerButton />,
+    // prevArrow: <NeedACarButton />,
     pauseOnHover: false,
     swipe: false,
   };
@@ -28,6 +35,7 @@ const HowItWorksMain = () => {
             <div className="how-it-works-title">
               <h4 data-aos="fade-right">How it woks</h4>
             </div>
+
             <div className="how-it-works-description">
               <p data-aos="fade-left">
                 Renting a luxury car has never been easier. Our streamlined
@@ -35,8 +43,17 @@ const HowItWorksMain = () => {
                 of choice online
               </p>
             </div>
+            <div className="control-keys">
+              <NeedACarButton onClick={previous} />
+              <DealerButton onClick={next} />
+            </div>
           </div>
-          <Slider {...settings}>
+          <Slider
+          ref={slider => {
+            sliderRef = slider;
+          }}
+          {...settings}
+          >
             <INeedACar />
             <IAmADealer />
           </Slider>

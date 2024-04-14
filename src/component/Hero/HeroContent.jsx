@@ -7,11 +7,10 @@ const HeroContent = ({ Herodata }) => {
   const { image } = Herodata;
   return (
     <>
-        <section className="hero" id="home" style={{backgroundImage: `url(${image})`}}>
+        <section className="hero" id="home" style={{ backgroundImage: `url(${image})` }}>
             <div data-aos="fade-down" className="hero-content">
               <p>Discover the world on wheels</p><br />
               <p>with our car rental service</p>
-              {/* <p>{header}</p> */}
             </div>
         </section>
     </>

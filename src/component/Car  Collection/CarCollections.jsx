@@ -5,18 +5,20 @@ import Users from "../../assets/users-01.png";
 import FuelPomp from "../../assets/gas-station.png";
 import { motion } from "framer-motion";
 
-const CarCollections = ({ carsdata, showAll }) => {
+const CarCollections = ({ carsdata, showAll, displayModal }) => {
 
   return (
     <>
-      <div data-aos="fade-right" className="car-cards-container">
+      <div className="car-cards-container">
         {carsdata.slice(0, showAll ? carsdata.length : 6).map((carsdata) => {
           const { id, title, price, image } = carsdata;
           return (
             <motion.article
+              data-aos="fade-right"
               key={id}
               className="car-card"
               whileHover={{ scale: 1.05, border: "1px solid #000000" }}
+              transition={{ duration: 0.1 }}
             >
               <img src={image} alt={image} />
               <div className="card-title-container">
@@ -50,14 +52,11 @@ const CarCollections = ({ carsdata, showAll }) => {
                   </div>
                 </div>
 
-                <div className="car-card-btn">
-                  {/* <motion.button
-                    className="card-btn"
-                    whileHover={{ scale: 0.9 }}
-                  > */}
+                <a className="car-card-btn" onClick={() => displayModal()}>
+                  
                     Rent Now
                   {/* </motion.button> */}
-                </div>
+                </a>
               </div>
             </motion.article>
           );

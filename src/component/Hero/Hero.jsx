@@ -8,7 +8,7 @@ import Slider from "react-slick";
 const Hero = () => {
   // const [bg, setbg] = useState(Herodata);
   const [ id, setId ] = useState(Herodata);
-  var settings = {
+  const settings = {
     dots: false,
     infinite: true,
     speed: 1000,
@@ -20,18 +20,13 @@ const Hero = () => {
   };
   return (
     <>
-      <Header/>
+      
 
       <Slider {...settings}>
         {Herodata.map((data) => (
           <HeroContent key={data.id} Herodata={data} />
         ))}
         </Slider>
-
-        {/* {Herodata.map((data) => (
-          <HeroContent key={data.id} Herodata={data} />
-        ))} */}
-        <Form />
     </>
   );
 }

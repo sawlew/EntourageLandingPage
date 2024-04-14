@@ -21,21 +21,26 @@
   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
   background-color: #ffffffe5;
 }
-.form-sub-content {
-  display: flex;
-  justify-content: center;
-  gap: 16px;
-}
+
 form {
+  width: 100%;
   display: flex;
-  justify-content: center;
-  gap: 16px;
+  /* flex-wrap: wrap; */
+  /* justify-content: center; */
+  /* gap: 16px; */
+  justify-content: space-between;
+  /* border: 2px solid purple; */
 }
 .inputs {
+  width: 20%;
   position: relative;
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
+  /* border: 5px solid red; */
+}
+.date-container {
+  width: 15%;
 }
 .locaionIcon {
   position: absolute;
@@ -45,13 +50,15 @@ form {
 }
 label {
   color: #000000;
-  opacity: 80%;
+  /* opacity: 80%; */
+  font-size: 14px;
 }
 .search-input {
-  padding-left: 35px;
+  /* padding-left: 35px;
   padding-right: 55px;
   padding-top: 16px;
-  padding-bottom: 16px;
+  padding-bottom: 16px; */
+  padding: 16px 5px 16px 35px;
 }
 .date-input {
   font-weight: 400;
@@ -81,9 +88,10 @@ input {
   justify-content: center;
   align-items: center;
   text-align: center;
+  /* border: 5px solid yellow; */
 }
 .form-btn button {
-  width: 100%;
+  /* width: 100%; */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -101,29 +109,20 @@ input {
   background-color: #0f0f0f;
   color: #ffffff;
 }
-@media screen and (max-width: 840px) {
-  .form-container {
-  /* min-height: 70vh; */
-}
-  .form-sub-container {
-    /* left: 1px; */
+@media screen and (max-width: 767px) {
+  form{
+    flex-direction: column;
+    gap: 2rem;
   }
-  .form-sub-content {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  /* align-items: center; */
-  gap: 16px;
-}
-form {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  /* align-items: center; */
-  gap: 16px;
-}
-.date-input {
-  width: 100%;
-  padding: 15px 5px;
-}
+  .inputs, .date-container{
+    width: 100%;
+  }
+  .form-container{
+    /* border: 5px solid red; */
+    height: 500px;
+  }
+  .form-positioner{
+    bottom: 0;
+    top: -15%;
+  }
 }

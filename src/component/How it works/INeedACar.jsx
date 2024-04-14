@@ -33,8 +33,10 @@ const INeedACar = () => {
         </div>
 
         <div data-aos="fade-left" className="need-car-right">
-          <div className="image-container" style={{backgroundImage: `url(${Jeep})`}}>
-            {/* <img src={Jeep} alt="" className="" /> */}
+          <div className="image-container" 
+          style={{backgroundImage: `url(${Jeep})`}}
+          >
+            {/* <img src={Jeep} alt="" className="right-jeep" /> */}
           </div>
         </div>
       </div>

@@ -17,13 +17,6 @@
   padding-top: 5rem;
 }
 .car-collection-title h4 {
-  /* width: 350px;
-  font-weight: 500;
-  font-size: 38px;
-  line-height: 42.4px;
-  letter-spacing: -2%;
-  text-align: start;
-  padding: 0 1rem; */
   font-weight: 700;
   font-size: 48px;
   line-height: 62.4px;
@@ -31,7 +24,7 @@
   text-align: center;
 }
 .car-collection-description p {
-  width: 720px;
+  /* width: 720px; */
   font-weight: 500;
   font-size: 18px;
   line-height: 28.8px;
@@ -79,6 +72,10 @@
   gap: 3rem 2rem;
   grid-template-columns: 1fr 1fr 1fr;
   margin-bottom: 4rem;
+
+  justify-content: space-evenly;
+  gap: 2em 1em;
+  /* gap: 20px; */
 }
 .card-title p {
   font-weight: 600;
@@ -101,7 +98,7 @@
   display: flex;
   flex-direction: column;
   gap: 1rem;
-  max-width: 384px;
+  max-width: 360px;
   width: 100%;
   padding: 15px;
   border-radius: 24px;
@@ -109,6 +106,7 @@
   transition: linear ease-in-out 300ms;
   margin: 0 auto;
   /* transition-duration: 5s; */
+
 }
 .car-card img {
   max-width: 100%;
@@ -149,7 +147,7 @@
 .car-card-btn {
   margin-top: 1rem;
   text-align: center;
-  padding: 8px 110px;
+  padding: 8px 90px;
   border: none;
   border: 1px solid #000000;
   border-radius: 32px;
@@ -203,22 +201,56 @@
   letter-spacing: -2%;
   text-align: center;
 } */
-@media screen and (max-width: 430px) {
-  .car-collection-title h4 {
-    width: 400px;
-    font-weight: 500;
+
+@media screen and (max-width: 991px){
+  .car-collection-title h4{
     font-size: 38px;
-    line-height: 42.4px;
-    text-align: start;
-    padding: 0 1rem;
   }
-  .car-collection-description p {
-    width: 300px;
-    font-weight: 500;
-    font-size: 18px;
-    line-height: 28.8px;
-    letter-spacing: -2%;
-    text-align: start;
-    padding: 0 10px;
+  .car-cards-container{
+    grid-template-columns: 1fr 1fr;
   }
 }
+
+@media screen and (max-width: 991px){
+  .car-collection-title h4{
+    font-size: 30px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .car-collection-title h4{
+    /* font-size: 38px; */
+    line-height: 30px;
+  }
+  .filter-btn {
+    font-size: 12px;
+    padding: 5px 13px;
+  }
+  .car-cards-container{
+    grid-template-columns: 1fr;
+  }
+}
+
+@media screen and (max-width: 525px) {
+  .collection-filter-container{
+    display: block;
+    width: 100%;
+    overflow-x: scroll;
+  }
+  .collection-filter-container::-webkit-scrollbar{
+    display: none;
+  }
+  .collection-filter-btns{
+    justify-content: space-between;
+    min-width: 525px;
+    gap: 3px;
+  }
+  .filter-btn{
+    font-size: 10px;
+  }
+  .car-collection-description p{
+    font-size: 16px;
+  }
+}
+  
+
