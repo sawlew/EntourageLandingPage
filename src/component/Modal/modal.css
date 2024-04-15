@@ -67,6 +67,10 @@
     font-weight: bold;
   }
 
+.success-message{
+    color: green;
+    /* font-size: 64px; */
+}
 @media screen and (max-width: 991px) {
     .main-bg{
         width: 80%;

@@ -38,7 +38,7 @@ function App() {
       <HowItWorks />
       <Services />
       <Testimonials />
-      <DownloadApp />
+      <DownloadApp displayModal={showModal} />
       <Footer />
       {modal ? <Modal displayModal={showModal} /> : null}
     </>

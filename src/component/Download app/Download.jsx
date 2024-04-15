@@ -1,7 +1,7 @@
 import "./download.css";
 import AppStoreImg from '../../assets/App Store.png';
 import PlayStoreImg from "../../assets/Play Store.png";
-const DownloadApp = () => {
+const DownloadApp = ({displayModal}) => {
   return (
     <>
       <section className="download-main-container">
@@ -20,10 +20,10 @@ const DownloadApp = () => {
               </div>
             </div>
             <div data-aos="fade-left" className="download-right">
-              <button className="app-store store">
+              <button className="app-store store" onClick={displayModal}>
                 <img src={AppStoreImg} alt="" />
               </button>
-              <button className="play-store store">
+              <button className="play-store store" onClick={displayModal}>
                 <img src={PlayStoreImg} alt="" />
               </button>
             </div>
