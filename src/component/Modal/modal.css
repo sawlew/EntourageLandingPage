@@ -68,8 +68,16 @@
   }
 
 .success-message{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     color: green;
+    font-weight: 500;
     /* font-size: 64px; */
+}
+.error-message{
+    color: red;
+    font-weight: 500;
 }
 @media screen and (max-width: 991px) {
     .main-bg{
