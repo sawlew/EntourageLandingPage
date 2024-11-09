@@ -3,7 +3,7 @@
   /* position: absolute; */
   width: 100%;
   height: calc(100vh - 10px);
-  max-height: 700px;
+/*   max-height: 700px; */
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
